@@ -1,0 +1,24 @@
+{
+  "name": "image-sprite-vs-webpack-string",
+  "version": "1.0.0",
+  "description": "Test for each sizes of image sprite and webpack optimized string.",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn sprite multiple && yarn sprite solid && yarn webpack",
+    "sprite": "node -r babel-register ./scripts/generate-sprite.js",
+    "webpack": "node -r babel-register ./scripts/webpack-build.js"
+  },
+  "author": "ZZOMAN <reumia@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "base64-inline-loader": "^1.1.0",
+    "compression-webpack-plugin": "^1.0.1",
+    "file": "^0.2.2",
+    "node-sprite-generator": "^0.10.2",
+    "node-sprite-generator-jimp": "^0.0.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.8.1"
+  }
+}
