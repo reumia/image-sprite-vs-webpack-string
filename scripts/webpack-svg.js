@@ -11,8 +11,6 @@ import '../assets/svg/Bavarian_Pretzel.svg'
 
 import $ from 'jQuery'
 
-console.log(apple)
-
 $(document).ready(() => {
 	$('.webpack-apple-svg').append(apple)
 })
