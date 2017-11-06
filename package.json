@@ -24,6 +24,7 @@
     "node-sprite-generator": "^0.10.2",
     "node-sprite-generator-jimp": "^0.0.1",
     "rimraf": "^2.6.2",
+    "svg-inline-loader": "^0.8.0",
     "webpack": "^3.8.1"
   }
 }

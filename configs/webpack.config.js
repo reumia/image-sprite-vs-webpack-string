@@ -5,7 +5,8 @@ import CompressionPlugin from 'compression-webpack-plugin'
 module.exports = {
 	entry: {
 		'multiple': path.resolve(__dirname, '../scripts/webpack-multiple.js'),
-		'solid': path.resolve(__dirname, '../scripts/webpack-solid.js')
+		'solid': path.resolve(__dirname, '../scripts/webpack-solid.js'),
+		'svg': path.resolve(__dirname, '../scripts/webpack-svg.js')
 	},
 	output: {
 		path: path.resolve(__dirname, '../dist/bundle'),
@@ -14,7 +15,8 @@ module.exports = {
 	module: {
 		rules: [
 			{ test: /\.js$/, use: 'babel-loader' },
-			{ test: /\.png$/, use: 'base64-inline-loader' }
+			{ test: /\.png$/, use: 'base64-inline-loader' },
+			{ test: /\.svg$/, use: 'svg-inline-loader?classPrefix' }
 		]
 	},
 	plugins: [
