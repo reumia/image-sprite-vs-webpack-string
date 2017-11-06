@@ -21,6 +21,6 @@ rimraf(path.resolve(__dirname, './dist/bundle'), err => {
             chunkModules: false
         }) + '\n\n')
 
-        console.log(`Build complete.`)
+        console.log(`Webpack build complete.`)
     })
 })
