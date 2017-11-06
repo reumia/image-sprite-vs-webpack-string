@@ -22,9 +22,6 @@ if (process.argv.length >= 3) {
 				spritePath: path.resolve(__dirname, `../dist/${folder}/${type}.png`),
 				stylesheet: 'css',
 				stylesheetPath: path.resolve(__dirname, `../dist/${folder}/${type}.css`),
-				stylesheetOptions: {
-					pixelRatio: 16
-				},
 				compositor: require('node-sprite-generator-jimp'),
 				layout: 'packed'
 			}, err => {
