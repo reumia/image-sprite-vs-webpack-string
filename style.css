@@ -1,0 +1,23 @@
+html {
+	text-align: center;
+}
+
+.row {
+	overflow: hidden;
+	margin: 20px auto;
+	border-top: 1px solid #eee;
+}
+
+.col {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.webpack-circular-clock,
+.circular-clock,
+.webpack-apple,
+.Apple {
+	margin: 0 auto;
+}

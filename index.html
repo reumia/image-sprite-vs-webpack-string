@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Sprite vs Webpack Stringified Image</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./sprite/multiple.css">
+	<link rel="stylesheet" href="./sprite/solid.css">
+</head>
+<body>
+	<h1>Image Sprite vs Webpack Stringified Image</h1>
+	<main>
+		<div class="row">
+			<h2>단일 색상</h2>
+			<div class="col">
+				<h2>Image Sprite</h2>
+				<div class="circular-clock"></div>
+			</div>
+			<div class="col">
+				<h2>Webpack Stringified Image</h2>
+				<div class="webpack-circular-clock"></div>
+			</div>
+		</div>
+		<div class="row">
+			<h2>다중 색상</h2>
+			<div class="col">
+				<h2>Image Sprite</h2>
+				<div class="Apple"></div>
+			</div>
+			<div class="col">
+				<h2>Webpack Stringified Image</h2>
+				<div class="webpack-apple"></div>
+			</div>
+		</div>
+	</main>
+	<script src="./bundle/multiple.js"></script>
+	<script src="./bundle/solid.js"></script>
+</body>
+</html>

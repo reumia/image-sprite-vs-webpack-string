@@ -9,17 +9,19 @@ import rimraf from 'rimraf'
 import path from 'path'
 
 if (process.argv.length >= 3) {
+	const folder = 'sprite'
 	const types = [ 'multiple', 'solid' ]
 	const type = process.argv[2]
 
 	if (types.indexOf(type) !== -1) {
-		rimraf(path.resolve(__dirname, './dist/sprite'), err => {
+		rimraf(path.resolve(__dirname, `./dist/${folder}`), err => {
 			generator({
 				src: [
 					path.resolve(__dirname, `../assets/${type}/*.png`)
 				],
-				spritePath: path.resolve(__dirname, `../dist/sprites/${type}.png`),
-				stylesheetPath: path.resolve(__dirname, `../dist/sprites/${type}.scss`),
+				spritePath: path.resolve(__dirname, `../dist/${folder}/${type}.png`),
+				stylesheet: 'css',
+				stylesheetPath: path.resolve(__dirname, `../dist/${folder}/${type}.css`),
 				compositor: require('node-sprite-generator-jimp'),
 				layout: 'packed'
 			}, err => {

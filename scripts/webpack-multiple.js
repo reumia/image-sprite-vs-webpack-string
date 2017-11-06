@@ -1,4 +1,4 @@
-import '../assets/multiple/Apple.png'
+import apple from '../assets/multiple/Apple.png'
 import '../assets/multiple/Asparagus.png'
 import '../assets/multiple/Avocado.png'
 import '../assets/multiple/Baby_Bottle.png'
@@ -18,3 +18,13 @@ import '../assets/multiple/Bottle_of_Water.png'
 import '../assets/multiple/Bread.png'
 import '../assets/multiple/Broccoli.png'
 import '../assets/multiple/Cabbage.png'
+
+import $ from 'jQuery'
+
+$(document).ready(() => {
+	const img = $('<img />', {
+		src: apple
+	})
+
+	$('.webpack-apple').append(img)
+})
