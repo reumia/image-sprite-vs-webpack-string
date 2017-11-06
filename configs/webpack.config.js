@@ -19,6 +19,10 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.optimize.UglifyJsPlugin(),
-		new CompressionPlugin()
+		new CompressionPlugin(),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'vendor',
+			minChunks: Infinity
+		})
 	]
 }
